@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Linkedin">
+      <UniqueIdentifier>{41da9270-6081-4318-b3ff-41c909a3e883}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Google">
+      <UniqueIdentifier>{ce32ecd6-d9c8-44a9-8459-79aaf6d9c95e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="henry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="208_Implement_Trie_Prefix_Tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="391. Perfect Rectangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="394. Decode String.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bzoj1090.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="94. Binary Tree Inorder Traversal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="230. Kth Smallest Element in a BST.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="99. Recover Binary Search Tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="388. Longest Absolute File Path.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="307. Range Sum Query - Mutable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="208. Implement Trie (Prefix Tree).h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="425. Word Squares.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="422. Valid Word Square.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="42. Trapping Rain Water.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="407. Trapping Rain Water II.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ksum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HDU 1254.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="361. Bomb Enemy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="214. Shortest Palindrome.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="65. Valid Number.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lnkd_addinterval.h">
+      <Filter>Header Files\Linkedin</Filter>
+    </ClInclude>
+    <ClInclude Include="68. Text Justification.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="254. Factor Combinations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lnkd_midstack.h">
+      <Filter>Header Files\Linkedin</Filter>
+    </ClInclude>
+    <ClInclude Include="is_intersected.h">
+      <Filter>Header Files\Linkedin</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize_tree.h">
+      <Filter>Header Files\Linkedin</Filter>
+    </ClInclude>
+    <ClInclude Include="KNN.h">
+      <Filter>Header Files\Linkedin</Filter>
+    </ClInclude>
+    <ClInclude Include="gg_findmaxwith1flip.h">
+      <Filter>Header Files\Google</Filter>
+    </ClInclude>
+    <ClInclude Include="gg_intrange.h">
+      <Filter>Header Files\Google</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
