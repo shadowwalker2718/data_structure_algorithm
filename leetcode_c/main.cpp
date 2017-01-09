@@ -26,8 +26,22 @@
 #include "lnkd_midstack.h"
 #include "serialize_tree.h"
 #include "gg_findmaxwith1flip.h"
+#include "IndexMaxPQ.h"
+#include "skiplist.h"
+#include "lnkd_addinterval.h"
+#include "minwindowsub.h"
+#include "149.h"
 
 int main(int argc, char** argv) {
+    _149::test();
+    minwindowsub::test();
+
+    _lnkd_totalcovered_length::test();
+
+    _skiplist::test();
+
+    _indexheap::test();
+    _indexheap::test2();
 
     google::test();
 
