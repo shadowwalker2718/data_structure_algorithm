@@ -145,12 +145,14 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="149.h" />
     <ClInclude Include="208. Implement Trie (Prefix Tree).h" />
     <ClInclude Include="208_Implement_Trie_Prefix_Tree.h" />
     <ClInclude Include="214. Shortest Palindrome.h" />
     <ClInclude Include="230. Kth Smallest Element in a BST.h" />
     <ClInclude Include="254. Factor Combinations.h" />
     <ClInclude Include="307. Range Sum Query - Mutable.h" />
+    <ClInclude Include="34. Search for a Range.h" />
     <ClInclude Include="361. Bomb Enemy.h" />
     <ClInclude Include="388. Longest Absolute File Path.h" />
     <ClInclude Include="391. Perfect Rectangle.h" />
@@ -161,19 +163,29 @@
     <ClInclude Include="425. Word Squares.h" />
     <ClInclude Include="65. Valid Number.h" />
     <ClInclude Include="68. Text Justification.h" />
+    <ClInclude Include="68.h" />
     <ClInclude Include="94. Binary Tree Inorder Traversal.h" />
     <ClInclude Include="99. Recover Binary Search Tree.h" />
+    <ClInclude Include="allLPS.h" />
+    <ClInclude Include="BoundedBlockingQueue.h" />
     <ClInclude Include="bzoj1090.h" />
+    <ClInclude Include="calendar.h" />
+    <ClInclude Include="deadlock.h" />
     <ClInclude Include="gg_findmaxwith1flip.h" />
     <ClInclude Include="gg_intrange.h" />
+    <ClInclude Include="h2o.h" />
     <ClInclude Include="HDU 1254.h" />
     <ClInclude Include="henry.h" />
+    <ClInclude Include="IndexMaxPQ.h" />
     <ClInclude Include="is_intersected.h" />
     <ClInclude Include="KNN.h" />
     <ClInclude Include="ksum.h" />
     <ClInclude Include="lnkd_addinterval.h" />
     <ClInclude Include="lnkd_midstack.h" />
+    <ClInclude Include="minwindowsub.h" />
+    <ClInclude Include="print_matrix.h" />
     <ClInclude Include="serialize_tree.h" />
+    <ClInclude Include="skiplist.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

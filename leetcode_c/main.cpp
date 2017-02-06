@@ -31,13 +31,26 @@
 #include "lnkd_addinterval.h"
 #include "minwindowsub.h"
 #include "149.h"
+#include "BoundedBlockingQueue.h"
+#include "deadlock.h"
+#include "34. Search for a Range.h"
+#include "h2o.h"
+#include "allLPS.h"
+#include "print_matrix.h"
+#include "68.h"
 
 int main(int argc, char** argv) {
-    _149::test();
+    _68_2::test();
+    _print_matrix::test();
     minwindowsub::test();
-
+    _allLPS::test();
+    _h2o::mainthread2();
+    _h2o::test();
+    _34::test();
+    deadlock::test();
+    _linkedin::test();
     _lnkd_totalcovered_length::test();
-
+    _149::test();
     _skiplist::test();
 
     _indexheap::test();
@@ -55,9 +68,9 @@ int main(int argc, char** argv) {
     _42::test();
     _42::test2();
 
-	_208::test();
+    _208::test();
     _208_ext::test();
-	_391::test();
+    _391::test();
     _394::test();
     _388::test();
     _307::test();
@@ -75,6 +88,6 @@ int main(int argc, char** argv) {
 
     _ksum::test();
     _hdu_1254::test();
-	return 0;
+    return 0;
 }
 

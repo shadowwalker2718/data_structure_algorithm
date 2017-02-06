@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include "henry.h"
 
@@ -33,7 +33,38 @@ namespace minwindowsub {
         }
     };
 
+    struct Solution2 {
+      string minWindow(string s, string t) {
+        int m[128] = {};
+        //unordered_map<char, int> m;
+        for (auto c : t) m[c]++; // m is a dynamic counter
+        int counter = t.size(), head = 0, cur = 0, len = INT_MAX, h = 0;
+        while (cur<s.size()) {
+          if (m[s[cur]]>0)
+            counter--; //in t
+          m[s[cur]]--;
+          //cur++;
+          while (counter == 0) { //valid window is found
+            if (cur - head < len) {
+              h = head;
+              len = cur - head + 1;
+            }
+            //开始挪窗口的起始点
+            if (m[s[head]] == 0) {
+              counter++;  //make it invalid
+            }
+            m[s[head]]++;
+            head++;
+          }
+          cur++;
+        }
+        return len == INT_MAX ? "" : s.substr(h, len);
+      }
+    };
+
     void test() {
+        Solution2 sln2;
+        assert(sln2.minWindow("xacbbaxca", "aba") == "baca");
         Solution sln;
         assert(sln.minWindow("acbbaca","aba")=="baca");
     }
