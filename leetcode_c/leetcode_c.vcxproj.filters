@@ -22,6 +22,9 @@
     <Filter Include="Header Files\Design">
       <UniqueIdentifier>{b0c403b3-a8fa-4e88-834e-66834307bc34}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Bloomberg">
+      <UniqueIdentifier>{f7406739-c832-40a7-84c0-e3a6947224a7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -151,6 +154,21 @@
     </ClInclude>
     <ClInclude Include="calendar.h">
       <Filter>Header Files\Design</Filter>
+    </ClInclude>
+    <ClInclude Include="DelayQueue.h">
+      <Filter>Header Files\Linkedin</Filter>
+    </ClInclude>
+    <ClInclude Include="maxstack.h">
+      <Filter>Header Files\Linkedin</Filter>
+    </ClInclude>
+    <ClInclude Include="justifytextline.h">
+      <Filter>Bloomberg</Filter>
+    </ClInclude>
+    <ClInclude Include="hangman.h">
+      <Filter>Header Files\Linkedin</Filter>
+    </ClInclude>
+    <ClInclude Include="lfu.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

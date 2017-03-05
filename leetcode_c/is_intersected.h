@@ -6,7 +6,7 @@ namespace _lnkd_is_intersected {
 
     // define the node struct of links
     typedef struct Node {
-        struct Node* next;
+        struct Node* next=NULL;
     } Node;
 
     int is_intersected(Node* p1, Node* p2) {
@@ -64,44 +64,58 @@ namespace _lnkd_is_intersected {
     int test() {
         Node end1 = { NULL };
         Node end2 = { NULL };
+
+        // no cycle
+        {
+          vector<Node> vn1(10);
+          vector<Node> vn2(3);
+          for (int i = 0; i < vn1.size()-1; i++)
+            vn1[i].next = &vn1[i + 1];
+
+          for (int i = 0; i < vn2.size() - 1; i++)
+            vn2[i].next = &vn2[i + 1];
+          vn2.back().next = &vn1[7];
+        }
+
+        {
+          vector<Node> vn1(10);
+          vector<Node> vn2(8);
+          for (int i = 0; i < vn1.size() - 1; i++)
+            vn1[i].next = &vn1[i + 1];
+
+          for (int i = 0; i < vn2.size() - 1; i++)
+            vn2[i].next = &vn2[i + 1];
+        }
+
+
+        // with cycle
+        {// intersect at tail
+          vector<Node> vn1(20);
+          for (int i = 0; i < vn1.size() - 1; i++)
+            vn1[i].next = &vn1[i + 1];
+          vn1.back().next = &vn1[15];
+
+          vector<Node> vn2(3);
+          for (int i = 0; i < vn2.size() - 1; i++)
+            vn2[i].next = &vn2[i + 1];
+          vn2.back().next = &vn1[7];
+        }
+
+        {// intersect at cycle
+          vector<Node> vn1(20);
+          for (int i = 0; i < vn1.size() - 1; i++)
+            vn1[i].next = &vn1[i + 1];
+          vn1.back().next = &vn1[8];
+
+          vector<Node> vn2(3);
+          for (int i = 0; i < vn2.size() - 1; i++)
+            vn2[i].next = &vn2[i + 1];
+          vn2.back().next = &vn1[17];
+        }
+
         // 定义几种链表情况
         // two links not intersect with each other, no circle
-        /*Node link_1_n =
-        {
-            &(Node) { &(Node) { &(Node) { &(Node) { &(Node) { &(Node) { &(Node) { &(Node) { &end1 } } } } } } } } };
-        Node link_2_n =
-        {
-            &(Node) { &(Node) { &(Node) { &(Node) { &(Node) { &(Node) { &(Node) { &(Node) { &end2 } } } } } } } } };
-
-        // two links intersect with each other, no circle
-        Node common_n = { &(Node) { &(Node) { &end1 } } };
-
-        Node link_1_y = { &(Node) { &(Node) { &(Node) { &(Node) { &(Node) { &common_n } } } } } };
-        Node link_2_y = { &(Node) { &(Node) { &(Node) { &(Node) { &(Node) { &common_n } } } } } };
-
-        // two links, has circle, not intersected.
-        Node circle1 = { &(Node) { &(Node) { &(Node) { &(Node) { &circle1 } } } } };
-        Node link_c1_n = { &(Node) { &(Node) { &(Node) { &(Node) { &circle1 } } } } };
-
-        Node circle2 = { &(Node) { &(Node) { &(Node) { &(Node) { &circle2 } } } } };
-        Node link_c2_n = { &(Node) { &(Node) { &(Node) { &(Node) { &circle2 } } } } };
-
-        // two links, has circle, intersected at a non-circle position
-        Node common_c = { &(Node) { &(Node) { &(Node) { &(Node) { &common_c } } } } };
-        Node common_part = { &(Node) { &common_c } };
-
-        Node link_c1_y = { &(Node) { &(Node) { &common_part } } };
-        Node link_c2_y = { &(Node) { &(Node) { &common_part } } };
-        // two links, has common circle, but different 'joint-points'.
-
-        Node jp1 = { NULL };
-        Node jp2 = { NULL };
-        // 'weave' the joint-points into a circle:
-        jp1.next = &(Node) { &(Node) { &jp2 } };
-        jp2.next = &(Node) { &jp1 };
-
-        Node link_c1_y2 = { &(Node) { &(Node) { &(Node) { &(Node) { &jp1 } } } } };
-        Node link_c2_y2 = { &(Node) { &(Node) { &(Node) { &(Node) { &jp2 } } } } };
+        /*
 
         if (is_intersected(&link_1_n, &link_2_n)) {
             printf("link_1_n and link_2_n Intersected!\n");

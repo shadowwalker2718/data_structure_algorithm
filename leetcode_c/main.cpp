@@ -38,56 +38,72 @@
 #include "allLPS.h"
 #include "print_matrix.h"
 #include "68.h"
+#include "DelayQueue.h"
+#include "justifytextline.h"
+#include "lfu.h"
+
 
 int main(int argc, char** argv) {
-    _68_2::test();
-    _print_matrix::test();
-    minwindowsub::test();
-    _allLPS::test();
-    _h2o::mainthread2();
-    _h2o::test();
-    _34::test();
-    deadlock::test();
-    _linkedin::test();
-    _lnkd_totalcovered_length::test();
-    _149::test();
-    _skiplist::test();
+  try {
+    float x = 1.02, y = 0;
+    cout << x / y << endl;
+    int x2 = 1, y2 = 0;
+    cout << x2 / y2 << endl;
+  } catch (const exception& e) {
+    cout << e.what() << endl;
+  }
 
-    _indexheap::test();
-    _indexheap::test2();
+  _lfu::test();
+  justify_text_line::test();
+  _delayqueue::test();
+  _68_2::test();
+  _print_matrix::test();
+  minwindowsub::test();
+  _allLPS::test();
+  _h2o::mainthread2();
+  _h2o::test();
+  _34::test();
+  deadlock::test();
+  _linkedin::test();
+  _lnkd_totalcovered_length::test();
+  _149::test();
+  _skiplist::test();
 
-    google::test();
+  _indexheap::test();
+  _indexheap::test2();
 
-    _lnkd_is_serialized_tree::test();
-    _midstack::test();
-    _254::test();
-    _65::test();
-    _68::test();
-    _214::test();
-    _361::test();
-    _42::test();
-    _42::test2();
+  google::test();
 
-    _208::test();
-    _208_ext::test();
-    _391::test();
-    _394::test();
-    _388::test();
-    _307::test();
-    _425::test();
-    _425::test2();
-    _425::test3();
+  _lnkd_is_serialized_tree::test();
+  _midstack::test();
+  _254::test();
+  _65::test();
+  _68::test();
+  _214::test();
+  _361::test();
+  _42::test();
+  _42::test2();
 
-    _422::test();
+  _208::test();
+  _208_ext::test();
+  _391::test();
+  _394::test();
+  _388::test();
+  _307::test();
+  _425::test();
+  _425::test2();
+  _425::test3();
 
-    _407::test();
+  _422::test();
+
+  _407::test();
 
 
 
-    _bzoj1090::test();
+  _bzoj1090::test();
 
-    _ksum::test();
-    _hdu_1254::test();
-    return 0;
+  _ksum::test();
+  _hdu_1254::test();
+  return 0;
 }
 
