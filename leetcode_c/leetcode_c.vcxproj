@@ -188,6 +188,7 @@
     <ClInclude Include="lnkd_midstack.h" />
     <ClInclude Include="maxstack.h" />
     <ClInclude Include="minwindowsub.h" />
+    <ClInclude Include="MultiDimensionArray.h" />
     <ClInclude Include="print_matrix.h" />
     <ClInclude Include="serialize_tree.h" />
     <ClInclude Include="skiplist.h" />

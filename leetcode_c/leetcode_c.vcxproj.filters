@@ -170,5 +170,8 @@
     <ClInclude Include="lfu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MultiDimensionArray.h">
+      <Filter>Header Files\Linkedin</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

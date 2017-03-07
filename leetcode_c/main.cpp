@@ -41,17 +41,22 @@
 #include "DelayQueue.h"
 #include "justifytextline.h"
 #include "lfu.h"
+#include "is_intersected.h"
+#include "MultiDimensionArray.h"
 
 
 int main(int argc, char** argv) {
-  try {
+  /*try {
     float x = 1.02, y = 0;
     cout << x / y << endl;
     int x2 = 1, y2 = 0;
     cout << x2 / y2 << endl;
   } catch (const exception& e) {
     cout << e.what() << endl;
-  }
+  }*/
+
+  _multi_dimension_array::test();
+  _lnkd_is_intersected::test();
 
   _lfu::test();
   justify_text_line::test();
