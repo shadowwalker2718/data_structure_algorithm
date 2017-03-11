@@ -43,6 +43,8 @@
 #include "lfu.h"
 #include "is_intersected.h"
 #include "MultiDimensionArray.h"
+#include "encode_list_with_dups.h"
+#include "K-th Smallest in Lexicographical Order.h"
 
 
 int main(int argc, char** argv) {
@@ -54,6 +56,10 @@ int main(int argc, char** argv) {
   } catch (const exception& e) {
     cout << e.what() << endl;
   }*/
+
+  K_th_Smallest_in_Lexicographical_Order::test();
+
+  bbg_encode_list_with_dups::test();
 
   _multi_dimension_array::test();
   _lnkd_is_intersected::test();
@@ -111,4 +117,8 @@ int main(int argc, char** argv) {
   _hdu_1254::test();
   return 0;
 }
+
+
+
+
 

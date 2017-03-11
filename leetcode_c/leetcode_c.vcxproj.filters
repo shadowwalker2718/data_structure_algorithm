@@ -25,6 +25,12 @@
     <Filter Include="Bloomberg">
       <UniqueIdentifier>{f7406739-c832-40a7-84c0-e3a6947224a7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Bloomberg">
+      <UniqueIdentifier>{f136fca0-c8f5-4ab2-a576-bf87e97cc9a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hulu">
+      <UniqueIdentifier>{fd8cd7bf-8ea6-4ec9-8a3c-bf33d89a2181}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -172,6 +178,12 @@
     </ClInclude>
     <ClInclude Include="MultiDimensionArray.h">
       <Filter>Header Files\Linkedin</Filter>
+    </ClInclude>
+    <ClInclude Include="encode_list_with_dups.h">
+      <Filter>Header Files\Bloomberg</Filter>
+    </ClInclude>
+    <ClInclude Include="K-th Smallest in Lexicographical Order.h">
+      <Filter>Header Files\hulu</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

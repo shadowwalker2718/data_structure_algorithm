@@ -172,6 +172,7 @@
     <ClInclude Include="calendar.h" />
     <ClInclude Include="deadlock.h" />
     <ClInclude Include="DelayQueue.h" />
+    <ClInclude Include="encode_list_with_dups.h" />
     <ClInclude Include="gg_findmaxwith1flip.h" />
     <ClInclude Include="gg_intrange.h" />
     <ClInclude Include="h2o.h" />
@@ -181,6 +182,7 @@
     <ClInclude Include="IndexMaxPQ.h" />
     <ClInclude Include="is_intersected.h" />
     <ClInclude Include="justifytextline.h" />
+    <ClInclude Include="K-th Smallest in Lexicographical Order.h" />
     <ClInclude Include="KNN.h" />
     <ClInclude Include="ksum.h" />
     <ClInclude Include="lfu.h" />
