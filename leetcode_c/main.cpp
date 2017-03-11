@@ -45,6 +45,8 @@
 #include "MultiDimensionArray.h"
 #include "encode_list_with_dups.h"
 #include "K-th Smallest in Lexicographical Order.h"
+#include "maxstack.h"
+
 
 
 int main(int argc, char** argv) {
@@ -56,6 +58,8 @@ int main(int argc, char** argv) {
   } catch (const exception& e) {
     cout << e.what() << endl;
   }*/
+
+  _minmaxstack::test();
 
   K_th_Smallest_in_Lexicographical_Order::test();
 

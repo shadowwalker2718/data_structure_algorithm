@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include "henry.h"
 
@@ -9,7 +9,7 @@ namespace K_th_Smallest_in_Lexicographical_Order{
       int cur = 1;
       --k;
       while (k) {
-        int steps = calsteps(n, cur, cur + 1);
+        int steps = calsteps(n, cur);
         if (steps <= k)
           ++cur, k -= steps;
         else
@@ -17,11 +17,16 @@ namespace K_th_Smallest_in_Lexicographical_Order{
       }
       return cur;
     }
-    int calsteps(int n, long n1, long n2) {////
+    // 在boundary condition n的情况下,找head到head+1之间的距离
+    int calsteps(long n, long head) {////
       int steps = 0;
-      while (n1 <= n) {
-        steps += min(n + 1L, n2) - n1;
-        n1 *= 10, n2 *= 10;
+      long tail = head + 1;
+      while (head <= n) {
+        if (tail <= n)
+          steps += tail - head;
+        else
+          steps += n - head + 1;
+        head *= 10, tail *= 10;
       }
       return steps;
     }
@@ -35,9 +40,6 @@ namespace K_th_Smallest_in_Lexicographical_Order{
   }
 
 }
-
-
-
 
 
 
