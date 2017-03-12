@@ -36,6 +36,7 @@ namespace _knighttour {
     assert(dfs(8, 8, 0, 0, 1)==2);
     assert(dfs(8, 8, 4, 4, 2) == 56);
     assert(dfs(8, 8, 1, 0, 1) == 3);
+    assert(dfs(8, 8, 2, 2, 1) == 8);
     cout << dfs(8, 8, 1, 0, 4) << endl;
     cout << dfs(8, 8, 4, 4, 4) << endl;
   }
