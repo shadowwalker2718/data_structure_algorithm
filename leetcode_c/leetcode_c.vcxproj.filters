@@ -185,5 +185,17 @@
     <ClInclude Include="K-th Smallest in Lexicographical Order.h">
       <Filter>Header Files\hulu</Filter>
     </ClInclude>
+    <ClInclude Include="binarytree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="blowoff_leaf.h">
+      <Filter>Bloomberg</Filter>
+    </ClInclude>
+    <ClInclude Include="segregate_even_odd_ll.h">
+      <Filter>Header Files\Bloomberg</Filter>
+    </ClInclude>
+    <ClInclude Include="ll.h">
+      <Filter>Header Files\Bloomberg</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

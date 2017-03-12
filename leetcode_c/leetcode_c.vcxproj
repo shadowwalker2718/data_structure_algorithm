@@ -167,6 +167,8 @@
     <ClInclude Include="94. Binary Tree Inorder Traversal.h" />
     <ClInclude Include="99. Recover Binary Search Tree.h" />
     <ClInclude Include="allLPS.h" />
+    <ClInclude Include="binarytree.h" />
+    <ClInclude Include="blowoff_leaf.h" />
     <ClInclude Include="BoundedBlockingQueue.h" />
     <ClInclude Include="bzoj1090.h" />
     <ClInclude Include="calendar.h" />
@@ -186,12 +188,14 @@
     <ClInclude Include="KNN.h" />
     <ClInclude Include="ksum.h" />
     <ClInclude Include="lfu.h" />
+    <ClInclude Include="ll.h" />
     <ClInclude Include="lnkd_addinterval.h" />
     <ClInclude Include="lnkd_midstack.h" />
     <ClInclude Include="maxstack.h" />
     <ClInclude Include="minwindowsub.h" />
     <ClInclude Include="MultiDimensionArray.h" />
     <ClInclude Include="print_matrix.h" />
+    <ClInclude Include="segregate_even_odd_ll.h" />
     <ClInclude Include="serialize_tree.h" />
     <ClInclude Include="skiplist.h" />
   </ItemGroup>
