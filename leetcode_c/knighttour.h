@@ -2,7 +2,6 @@
 #include "henry.h"
 
 namespace _knighttour {
-
 #define valid(x,y) (int)(x>=0 && y>=0 && x<R && y<C)
   vector<pair<int, int>> dirs = { { -1,-2 },{ -2,-1 },
   { 1,2 },{ 2,1 },
@@ -30,8 +29,6 @@ namespace _knighttour {
     }
     return r;
   }
-
-
   void test() {
     assert(dfs(8, 8, 0, 0, 1)==2);
     assert(dfs(8, 8, 4, 4, 2) == 56);
@@ -40,5 +37,4 @@ namespace _knighttour {
     assert(dfs(8, 8, 1, 0, 4) == 628);
     assert(dfs(8, 8, 4, 4, 4) == 1978);
   }
-
 }
