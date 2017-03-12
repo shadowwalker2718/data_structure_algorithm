@@ -197,5 +197,8 @@
     <ClInclude Include="ll.h">
       <Filter>Header Files\Bloomberg</Filter>
     </ClInclude>
+    <ClInclude Include="knighttour.h">
+      <Filter>Header Files\Bloomberg</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -48,6 +48,7 @@
 #include "maxstack.h"
 #include "blowoff_leaf.h"
 #include "segregate_even_odd_ll.h"
+#include "knighttour.h"
 
 
 int main(int argc, char** argv) {
@@ -59,6 +60,8 @@ int main(int argc, char** argv) {
   } catch (const exception& e) {
     cout << e.what() << endl;
   }*/
+
+  _knighttour::test();
 
   segregate_even_odd_ll::test();
   blowoff_leaf::test();
