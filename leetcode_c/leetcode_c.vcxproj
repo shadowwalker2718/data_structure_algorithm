@@ -172,8 +172,11 @@
     <ClInclude Include="BoundedBlockingQueue.h" />
     <ClInclude Include="bzoj1090.h" />
     <ClInclude Include="calendar.h" />
+    <ClInclude Include="comb_sum.h" />
+    <ClInclude Include="concurrent_hashmap.h" />
     <ClInclude Include="deadlock.h" />
     <ClInclude Include="DelayQueue.h" />
+    <ClInclude Include="dup.h" />
     <ClInclude Include="encode_list_with_dups.h" />
     <ClInclude Include="gg_findmaxwith1flip.h" />
     <ClInclude Include="gg_intrange.h" />
@@ -185,6 +188,7 @@
     <ClInclude Include="is_intersected.h" />
     <ClInclude Include="justifytextline.h" />
     <ClInclude Include="K-th Smallest in Lexicographical Order.h" />
+    <ClInclude Include="kangaroos.h" />
     <ClInclude Include="knighttour.h" />
     <ClInclude Include="KNN.h" />
     <ClInclude Include="ksum.h" />

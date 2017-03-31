@@ -11,18 +11,14 @@
 #include "422. Valid Word Square.h"
 #include "42. Trapping Rain Water.h"
 #include "407. Trapping Rain Water II.h"
-
 #include "bzoj1090.h"
-
 #include "ksum.h"
-
 #include "HDU 1254.h"
 #include "361. Bomb Enemy.h"
 #include "214. Shortest Palindrome.h"
 #include "65. Valid Number.h"
 #include "68. Text Justification.h"
 #include "254. Factor Combinations.h"
-
 #include "lnkd_midstack.h"
 #include "serialize_tree.h"
 #include "gg_findmaxwith1flip.h"
@@ -49,7 +45,9 @@
 #include "blowoff_leaf.h"
 #include "segregate_even_odd_ll.h"
 #include "knighttour.h"
-
+#include "dup.h"
+#include "concurrent_hashmap.h"
+#include "kangaroos.h"
 
 int main(int argc, char** argv) {
   /*try {
@@ -61,20 +59,22 @@ int main(int argc, char** argv) {
     cout << e.what() << endl;
   }*/
 
-  _knighttour::test();
+  _kangaroos::test();
 
+  _254::test();
+
+  _concurrent_hashmap::test();
+
+  _find_dup::test();
+  _knighttour::test();
   segregate_even_odd_ll::test();
   blowoff_leaf::test();
-
   _minmaxstack::test();
-
   K_th_Smallest_in_Lexicographical_Order::test();
-
   bbg_encode_list_with_dups::test();
 
   _multi_dimension_array::test();
   _lnkd_is_intersected::test();
-
   _lfu::test();
   justify_text_line::test();
   _delayqueue::test();
@@ -98,7 +98,6 @@ int main(int argc, char** argv) {
 
   _lnkd_is_serialized_tree::test();
   _midstack::test();
-  _254::test();
   _65::test();
   _68::test();
   _214::test();

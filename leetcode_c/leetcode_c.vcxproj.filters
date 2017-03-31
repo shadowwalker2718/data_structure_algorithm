@@ -200,5 +200,17 @@
     <ClInclude Include="knighttour.h">
       <Filter>Header Files\Bloomberg</Filter>
     </ClInclude>
+    <ClInclude Include="dup.h">
+      <Filter>Header Files\Bloomberg</Filter>
+    </ClInclude>
+    <ClInclude Include="concurrent_hashmap.h">
+      <Filter>Header Files\Linkedin</Filter>
+    </ClInclude>
+    <ClInclude Include="comb_sum.h">
+      <Filter>Header Files\Linkedin</Filter>
+    </ClInclude>
+    <ClInclude Include="kangaroos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
