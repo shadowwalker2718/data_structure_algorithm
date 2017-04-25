@@ -13,18 +13,17 @@ namespace minwindowsub {
             string res;
             for (int i = 0; i < s.size(); i++) { // loop through s
                 if (mp.count(s[i]) == 0) { continue; }
-                while (count && j < s.size()) {
+                while (count>0 && j < s.size()) {
                     if (mp.count(s[j]) == 0) {
                         j++; continue;
                     }
                     mp[s[j]]--;
                     if (mp[s[j]] == 0) count--;
                     j++;
-                    if (count == 0) break;
                 }
                 if (count == 0)
-                    if (j - i< ans)
-                        ans = j - i, res = s.substr(i, ans);
+                  if (j - i< ans)
+                    ans = j - i, res = s.substr(i, ans);
                 if (mp[s[i]] == 0)
                     count++;
                 mp[s[i]]++;
@@ -35,28 +34,28 @@ namespace minwindowsub {
 
     struct Solution2 {
       string minWindow(string s, string t) {
-        int m[128] = {};
-        //unordered_map<char, int> m;
+        //int m[128] = {};
+        unordered_map<char, int> m;
         for (auto c : t) m[c]++; // m is a dynamic counter
-        int counter = t.size(), head = 0, cur = 0, len = INT_MAX, h = 0;
-        while (cur<s.size()) {
-          if (m[s[cur]]>0)
+        int counter = t.size(), hd = 0, tl = 0, len = INT_MAX, h = 0;
+        while (tl<s.size()) {
+          char dc = s[tl];
+          if (m[s[tl]]>0)
             counter--; //in t
-          m[s[cur]]--;
-          //cur++;
+          m[s[tl]]--;
           while (counter == 0) { //valid window is found
-            if (cur - head < len) {
-              h = head;
-              len = cur - head + 1;
+            if (tl - hd < len) {
+              h = hd;
+              len = tl - hd + 1;
             }
-            //开始挪窗口的起始点
-            if (m[s[head]] == 0) {
+            dc = s[hd];
+            if (m[s[hd]] == 0) {
               counter++;  //make it invalid
             }
-            m[s[head]]++;
-            head++;
+            m[s[hd]]++;
+            hd++;
           }
-          cur++;
+          tl++;
         }
         return len == INT_MAX ? "" : s.substr(h, len);
       }
@@ -64,9 +63,11 @@ namespace minwindowsub {
 
     void test() {
         Solution2 sln2;
-        assert(sln2.minWindow("xacbbaxca", "aba") == "baca");
+        assert(sln2.minWindow("bacbbaxca", "aba") == "baxca");
         Solution sln;
         assert(sln.minWindow("acbbaca","aba")=="baca");
     }
 }
+
+
 

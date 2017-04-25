@@ -212,5 +212,29 @@
     <ClInclude Include="kangaroos.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="sparsematrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="reverse_string.h">
+      <Filter>Header Files\Linkedin</Filter>
+    </ClInclude>
+    <ClInclude Include="winner_tree.h">
+      <Filter>Header Files\Linkedin</Filter>
+    </ClInclude>
+    <ClInclude Include="canPlaceFlower.h">
+      <Filter>Header Files\Linkedin</Filter>
+    </ClInclude>
+    <ClInclude Include="frequent_element.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="reliterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="avl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shortest_non_substring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

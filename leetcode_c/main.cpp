@@ -48,6 +48,14 @@
 #include "dup.h"
 #include "concurrent_hashmap.h"
 #include "kangaroos.h"
+#include "sparsematrix.h"
+#include "reverse_string.h"
+#include "winner_tree.h"
+#include "canPlaceFlower.h"
+#include "comb_sum.h"
+#include "frequent_element.h"
+#include "reliterator.h"
+#include "shortest_non_substring.h"
 
 int main(int argc, char** argv) {
   /*try {
@@ -58,6 +66,25 @@ int main(int argc, char** argv) {
   } catch (const exception& e) {
     cout << e.what() << endl;
   }*/
+  _shortest_non_substring::test();
+  _RLEIterator::test();
+
+  _frequent_element::test();
+
+  minwindowsub::test();
+
+  _68_2::test();
+  _comb_sum::test();
+
+  _canPlaceFlower::test();
+
+  _winner_tree::test();
+
+ 
+
+  _reverse_string::test();
+
+  _sparsematrix::test();
 
   _kangaroos::test();
 
@@ -78,9 +105,8 @@ int main(int argc, char** argv) {
   _lfu::test();
   justify_text_line::test();
   _delayqueue::test();
-  _68_2::test();
+  
   _print_matrix::test();
-  minwindowsub::test();
   _allLPS::test();
   _h2o::mainthread2();
   _h2o::test();

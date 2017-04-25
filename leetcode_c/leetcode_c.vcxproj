@@ -167,17 +167,20 @@
     <ClInclude Include="94. Binary Tree Inorder Traversal.h" />
     <ClInclude Include="99. Recover Binary Search Tree.h" />
     <ClInclude Include="allLPS.h" />
+    <ClInclude Include="avl.h" />
     <ClInclude Include="binarytree.h" />
     <ClInclude Include="blowoff_leaf.h" />
     <ClInclude Include="BoundedBlockingQueue.h" />
     <ClInclude Include="bzoj1090.h" />
     <ClInclude Include="calendar.h" />
+    <ClInclude Include="canPlaceFlower.h" />
     <ClInclude Include="comb_sum.h" />
     <ClInclude Include="concurrent_hashmap.h" />
     <ClInclude Include="deadlock.h" />
     <ClInclude Include="DelayQueue.h" />
     <ClInclude Include="dup.h" />
     <ClInclude Include="encode_list_with_dups.h" />
+    <ClInclude Include="frequent_element.h" />
     <ClInclude Include="gg_findmaxwith1flip.h" />
     <ClInclude Include="gg_intrange.h" />
     <ClInclude Include="h2o.h" />
@@ -200,9 +203,14 @@
     <ClInclude Include="minwindowsub.h" />
     <ClInclude Include="MultiDimensionArray.h" />
     <ClInclude Include="print_matrix.h" />
+    <ClInclude Include="reliterator.h" />
+    <ClInclude Include="reverse_string.h" />
     <ClInclude Include="segregate_even_odd_ll.h" />
     <ClInclude Include="serialize_tree.h" />
+    <ClInclude Include="shortest_non_substring.h" />
     <ClInclude Include="skiplist.h" />
+    <ClInclude Include="sparsematrix.h" />
+    <ClInclude Include="winner_tree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
