@@ -47,6 +47,9 @@
 // Numerics
 #include <cmath>
 
+#include <climits> // LL_MAX
+#include <cstring> // strlen
+
 
 using namespace std;
 using namespace std::chrono;

@@ -3,7 +3,7 @@
 
 namespace _h2o {
   mutex gm;
-  atomic<int> hc=0, oc=0, th=0, to=0;
+  atomic<int> hc(0), oc(0), th(0), to(0);
   condition_variable cv;
 
 
@@ -126,7 +126,7 @@ namespace _h2o {
 
   namespace watermaker{
     mutex gm;
-    atomic<int> hc = 0, oc = 0;
+    atomic<int> hc(0), oc(0);
     condition_variable cv;
 
     void make_hydrogen() { hc++; }

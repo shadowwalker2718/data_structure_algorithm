@@ -94,7 +94,7 @@ namespace _lfu {
       bykey[key] = nodeIt;
     }
 
-    // Look up an item with key, return its usage count  
+    // Look update an item with key, return its usage count
     // O(1)  
     int getFreq(LFUKEY key) {
       if (bykey.find(key) == bykey.end()) {

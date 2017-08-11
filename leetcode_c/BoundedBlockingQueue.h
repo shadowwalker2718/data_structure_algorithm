@@ -14,7 +14,7 @@ namespace _linkedin {
     public:
         // producer,consumer知道什么时候睡,但不知道什么时候醒
 
-        template <typename T>
+        //template <typename T>
         void produce(const T& item) {
             unique_lock<mutex> lk(mu);
             while (Q.size() == MAXCOUNT) {//spurious wake
@@ -25,7 +25,7 @@ namespace _linkedin {
         }
 
         // consumer
-        template <typename T>
+        //template <typename T>
         T consume() {
             unique_lock<mutex> lk(mu);
             while (Q.size() == 0) {
@@ -57,7 +57,7 @@ namespace _linkedin {
             MAXCOUNT = c;
         }
 
-        template <typename T>
+        //template <typename T>
         void put(const T& item) throw (exception) { // producer
             if (MAXCOUNT == -1) throw exception("uninitialized MAXCOUNT");
             unique_lock<mutex> lk(mu);
@@ -69,7 +69,7 @@ namespace _linkedin {
             if (Q.size() == 1) cv.notify_one();
         }
 
-        template <typename T>
+        //template <typename T>
         T get() throw (exception) { // consumer
             if (MAXCOUNT == -1) throw exception("uninitialized MAXCOUNT");
             unique_lock<mutex> lk(mu);

@@ -46,7 +46,7 @@ namespace _indexheap {
             }
             int cur_idx = ticker2index[ticker]; // current index
             volumes[cur_idx] = new_volume;
-            // 1. increment - swap with its parent (sift up)
+            // 1. increment - swap with its parent (sift update)
             int pindex = PAR(cur_idx);
             while (pindex >= 0 && volumes[pindex] < volumes[cur_idx]) { // LogN
                 __swap(cur_idx, pindex);

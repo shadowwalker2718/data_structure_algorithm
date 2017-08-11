@@ -120,11 +120,11 @@ namespace _391{
             };
             long long tmp;
             for (auto v : rectangles) {
-                tmp = long long(v[0]) << 32 | v[1];
+                tmp = (long long)(v[0]) << 32 | v[1];
                 if (h0.count(tmp)) return false; else h0.insert(tmp);
-                tmp = long long(v[0]) << 32 | v[1];
+                tmp = (long long)(v[0]) << 32 | v[1];
                 if (h0.count(tmp)) return false; else h0.insert(tmp);
-                tmp = long long(v[0]) << 32 | v[1];
+                tmp = (long long)(v[0]) << 32 | v[1];
                 if (h0.count(tmp)) return false; else h0.insert(tmp);
                 area += (v[2] - v[0])*(v[3] - v[1]);
                 f(v[0], v[1]);
