@@ -5,7 +5,7 @@
 
 namespace _lnkd_is_serialized_tree {
 
-    /* A binary tree TreeNode has val, pointer to left and right children */
+    /* v binary tree TreeNode has val, pointer to left and right children */
     struct TreeNode {
         int val;
         struct TreeNode* left=0, *right=0;

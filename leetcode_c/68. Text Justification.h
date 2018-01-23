@@ -40,7 +40,7 @@ namespace _68 {
 
   void test() {
     Solution sln;
-    vector<string> v({ "This", "is", "an", "example", "of", "text", "justification." });
+    vector<string> v={ "This", "is", "an", "example", "of", "text", "justification." };
     assert(sln.fullJustify(v, 16) ==
       vector<string>({ "This    is    an",
         "example  of text",

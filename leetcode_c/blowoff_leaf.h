@@ -1,7 +1,7 @@
 #pragma once
 
 #include "binarytree.h"
-#include "henry.h"
+#include <henry.h>
 
 namespace blowoff_leaf {
 

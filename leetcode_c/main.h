@@ -71,5 +71,15 @@
 #include "sort_color2.h"
 #include "632.h"
 #include "656. Coin Path.h"
+#include "660. Remove 9.h"
+#include "418. Sentence Screen Fitting.h"
+#include "279. Perfect Squares.h"
+#include "301. Remove Invalid Parentheses.h"
+#include "667. Beautiful Arrangement II.h"
+#include "fb_amazing_number.h"
+#include "llap.h"
+#include "merge_sort.h"
+#include "radix_sort_.h"
+#include "dijkstra.h"
 
 #endif //LEETCODE_C_MAIN_H

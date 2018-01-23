@@ -12,7 +12,7 @@ namespace _ksum {
     public:
         int kSum(vector<int> A, int k, int target) {
             if (A.size()<k || k <= 0) return 0;
-            //std::sort(A.begin(), A.end());
+            //std::sort(v.begin(), v.end());
             int r = 0;
             dfs(r, A, k, target, 0);
             return r;

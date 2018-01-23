@@ -52,13 +52,13 @@ namespace _linkedin {
 
         BBQ():MAXCOUNT(-1) {}
 
-        void init(int32_t c) throw (exception) {
+        void init(int32_t c) /*throw (exception)*/ {
             if (c <= 0) throw exception("maxcount must be greater than 0");
             MAXCOUNT = c;
         }
 
         //template <typename T>
-        void put(const T& item) throw (exception) { // producer
+        void put(const T& item) /*throw (exception)*/ { // producer
             if (MAXCOUNT == -1) throw exception("uninitialized MAXCOUNT");
             unique_lock<mutex> lk(mu);
             while (Q.size() == MAXCOUNT) {//spurious wake
@@ -70,7 +70,7 @@ namespace _linkedin {
         }
 
         //template <typename T>
-        T get() throw (exception) { // consumer
+        T get() /*throw (exception)*/ { // consumer
             if (MAXCOUNT == -1) throw exception("uninitialized MAXCOUNT");
             unique_lock<mutex> lk(mu);
             while (Q.size() == 0) {

@@ -2,7 +2,7 @@
 #include "henry.h"
 
 namespace _knighttour {
-#define valid(x,y) (int)(x>=0 && y>=0 && x<R && y<C)
+#define validXY(x,y) (int)(x>=0 && y>=0 && x<R && y<C)
   vector<pair<int, int>> dirs = { { -1,-2 },{ -2,-1 },
   { 1,2 },{ 2,1 },
   { -1,2 },{ 2,-1 },
@@ -13,7 +13,7 @@ namespace _knighttour {
     if (m.count({ x,y })) return m[{x, y}];
     int r = 0;
     for (auto pr : dirs) 
-      r += valid(x+pr.first,y+pr.second);
+      r += validXY(x+pr.first,y+pr.second);
     return m[{x, y}] = r;
   }
 
@@ -22,7 +22,7 @@ namespace _knighttour {
     int r = 0;
     for (auto pr : dirs) {
       int nx = x + pr.first, ny = y + pr.second;
-      if (valid(nx, ny)) {
+      if (validXY(nx, ny)) {
         int tmp = dfs(R, C, nx, ny, k - 1);
         r += tmp;
       }
